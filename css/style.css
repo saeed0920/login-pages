@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes moveContainer {
+  0% {
+    transform: translatex(5rem);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translatex(0); } }
+
 /*
 
 0px - 600px       = phone only
@@ -36,11 +44,13 @@ big-desktop
   align-items: center;
   padding: 5rem; }
   .container__login {
+    animation: moveContainer 1s;
     width: 50%;
     height: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    backface-visibility: hidden; }
     .container__login-box {
       display: flex;
       flex-direction: column;
