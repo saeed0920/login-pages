@@ -43,6 +43,17 @@ big-desktop
   background-size: cover;
   align-items: center;
   padding: 5rem; }
+  @media only screen and (max-width: 90.625em) {
+    .container {
+      height: 60rem;
+      width: 80vw; } }
+  @media only screen and (max-width: 35em) {
+    .container {
+      padding: 2rem; } }
+  @media only screen and (max-width: 25.625em) {
+    .container {
+      padding: 0.5rem;
+      width: 90vw; } }
   .container__login {
     animation: moveContainer 1s;
     width: 50%;
@@ -51,6 +62,18 @@ big-desktop
     flex-direction: column;
     align-items: center;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 90.625em) {
+      .container__login {
+        height: 95%; } }
+    @media only screen and (max-width: 68.75em) {
+      .container__login {
+        width: 60%; } }
+    @media only screen and (max-width: 56.25em) {
+      .container__login {
+        width: 85%; } }
+    @media only screen and (max-width: 40.625em) {
+      .container__login {
+        width: 100%; } }
     .container__login-box {
       display: flex;
       flex-direction: column;
@@ -60,18 +83,39 @@ big-desktop
       .container__login-box img {
         width: 5rem;
         height: 5rem; }
+        @media only screen and (max-width: 90.625em) {
+          .container__login-box img {
+            width: 4rem;
+            height: 4rem; } }
       .container__login-box h2 {
         font-size: 3.5rem;
         font-family: font-nastaliq; }
+        @media only screen and (max-width: 90.625em) {
+          .container__login-box h2 {
+            font-size: 2.5rem; } }
+        @media only screen and (max-width: 25.625em) {
+          .container__login-box h2 {
+            text-align: center; } }
       .container__login-box h1 {
         font-size: 4rem;
         font-family: font-header;
         color: #3e5151; }
+        @media only screen and (max-width: 90.625em) {
+          .container__login-box h1 {
+            font-size: 3rem; } }
+        @media only screen and (max-width: 25.625em) {
+          .container__login-box h1 {
+            text-align: center; } }
       .container__login-box h3 {
-        margin-top: 2rem;
         font-size: 3rem;
         font-family: font-main;
         color: #63666f; }
+        @media only screen and (max-width: 90.625em) {
+          .container__login-box h3 {
+            font-size: 2rem; } }
+        @media only screen and (max-width: 25.625em) {
+          .container__login-box h3 {
+            text-align: center; } }
     .container__login--input-box input {
       font-size: 2rem;
       font-family: font-text;
@@ -79,7 +123,7 @@ big-desktop
       padding: 1rem 4rem;
       border: none;
       border-radius: 2px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.7);
       border-bottom: 3px solid transparent;
       width: 90%;
       display: block;
@@ -116,6 +160,10 @@ big-desktop
       font-size: 3rem;
       font-family: font-text;
       backface-visibility: hidden; }
+      @media only screen and (max-width: 90.625em) {
+        .container__login--btn-box {
+          height: 5rem;
+          width: 15rem; } }
       .container__login--btn-box:visited, .container__login--btn-box:link {
         display: inline-block;
         padding: 3px;
@@ -157,6 +205,15 @@ big-desktop
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media only screen and (max-width: 35em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 25.625em) {
+    html {
+      font-size: 47%; } }
 
 body {
   font-family: sans-serif;
@@ -168,6 +225,15 @@ body {
 
 .background-img-1 {
   background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 52%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); }
+  @media only screen and (max-width: 68.75em) {
+    .background-img-1 {
+      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); } }
+  @media only screen and (max-width: 56.25em) {
+    .background-img-1 {
+      background-image: linear-gradient(280deg, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); } }
+  @media only screen and (max-width: 40.625em) {
+    .background-img-1 {
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); } }
 
 .margin-right-4 {
   margin-right: 4rem; }

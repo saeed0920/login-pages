@@ -28,6 +28,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include res(900) {
+    font-size: 60%;
+  }
+  @include res(560) {
+    font-size: 50%;
+  }
+  @include res(410) {
+    font-size: 47%;
+  }
 }
 
 body {

@@ -15,7 +15,17 @@
   background-size: cover;
   align-items: center;
   padding: 5rem;
-
+  @include res(1450) {
+    height: 60rem;
+    width: 80vw;
+  }
+  @include res(560) {
+    padding: 2rem;
+  }
+  @include res(410) {
+    padding: 0.5rem;
+    width: 90vw;
+  }
   &__login {
     animation: moveContainer 1s;
     width: 50%;
@@ -25,6 +35,20 @@
     align-items: center;
     backface-visibility: hidden;
 
+    @include res(1450) {
+      height: 95%;
+    }
+
+    @include res(1100) {
+      width: 60%;
+    }
+    @include res(900) {
+      width: 85%;
+    }
+    @include res(650) {
+      width: 100%;
+    }
+
     // login == flag and headers
     &-box {
       display: flex;
@@ -32,25 +56,47 @@
       align-items: center;
       justify-content: center;
       margin-bottom: auto;
+
       & img {
         width: 5rem;
         height: 5rem;
+        @include res(1450) {
+          width: 4rem;
+          height: 4rem;
+        }
       }
 
       & h2 {
         font-size: 3.5rem;
         font-family: $font--nastaliq;
+        @include res(1450) {
+          font-size: 2.5rem;
+        }
+        @include res(410) {
+          text-align: center;
+        }
       }
       & h1 {
         font-size: 4rem;
         font-family: $font--header;
         color: $color--primery;
+        @include res(1450) {
+          font-size: 3rem;
+        }
+        @include res(410) {
+          text-align: center;
+        }
       }
       & h3 {
-        margin-top: 2rem;
         font-size: 3rem;
         font-family: $font--main;
         color: $color--gray-text;
+        @include res(1450) {
+          font-size: 2rem;
+        }
+        @include res(410) {
+          text-align: center;
+        }
       }
     }
 
@@ -63,7 +109,7 @@
         padding: 1rem 4rem;
         border: none;
         border-radius: 2px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.7);
         border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
@@ -110,6 +156,10 @@
       font-size: 3rem;
       font-family: $font--text;
       backface-visibility: hidden;
+      @include res(1450) {
+        height: 5rem;
+        width: 15rem;
+      }
 
       &:visited,
       &:link {

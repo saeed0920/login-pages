@@ -73,3 +73,37 @@ big-desktop
     }
   }
 }
+
+// custom res
+@mixin res($res) {
+  @if $res == 410 {
+    @media only screen and (max-width: 25.625em) {
+      @content;
+    }
+  }
+  @if $res == 560 {
+    @media only screen and (max-width: 35em) {
+      @content;
+    }
+  }
+  @if $res == 650 {
+    @media only screen and (max-width: 40.625em) {
+      @content;
+    }
+  }
+  @if $res == 900 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $res == 1100 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $res == 1450 {
+    @media only screen and (max-width: 90.625em) {
+      @content;
+    }
+  }
+}
