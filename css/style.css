@@ -157,7 +157,7 @@ body {
   background: linear-gradient(to left, #3e5151, #decba4); }
 
 .background-img-1 {
-  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 52%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/6.jpg); }
+  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 52%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/6.jpg); }
 
 .margin-right-4 {
   margin-right: 4rem; }
