@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*
+
+0px - 600px       = phone only
+
+600px  - 900px    = tablet portrait
+
+900px  - 1200px   = tablet landscape
+
+[1200px  - 1800px]  = Desktop normaly style apply 
+
+1800px -  ∞ px    = Big Desktop 
+/////////////////////////////////////////////////////// 
+
+phone 
+
+tab-small
+
+tab-big 
+
+big-desktop
+*/
+/* animation */
+.page {
+  display: grid;
+  place-items: center;
+  min-height: 100vh; }
+
+.container {
+  display: flex;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
+  height: 65rem;
+  width: 137rem;
+  border-radius: 4px;
+  background-size: cover;
+  align-items: center;
+  padding: 5rem; }
+  .container__login {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container__login-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: auto; }
+      .container__login-box img {
+        width: 5rem;
+        height: 5rem; }
+      .container__login-box h2 {
+        font-size: 3.5rem;
+        font-family: font-nastaliq; }
+      .container__login-box h1 {
+        font-size: 4rem;
+        font-family: font-header;
+        color: #3e5151; }
+      .container__login-box h3 {
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-family: font-main;
+        color: #63666f; }
+    .container__login--input-box input {
+      font-size: 2rem;
+      font-family: font-text;
+      color: #63666f;
+      padding: 1rem 4rem;
+      border: none;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-bottom: 3px solid transparent;
+      width: 90%;
+      display: block;
+      transition: all 0.2s; }
+      .container__login--input-box input::-webkit-input-placeholder {
+        color: #63666f; }
+      .container__login--input-box input:focus, .container__login--input-box input:focus-visible {
+        outline: none;
+        width: 100%;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border-bottom: 3px solid green; }
+      .container__login--input-box input:focus:invalid {
+        border-bottom: 3px solid red; }
+      .container__login--input-box input:placeholder-shown + label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3rem); }
+    .container__login--input-box label {
+      display: block;
+      transition: all 0.2s;
+      font-size: 1.8rem;
+      font-family: font-text; }
+    .container__login--btn-box {
+      cursor: pointer;
+      height: 6rem;
+      border: none;
+      border-radius: 9rem;
+      width: 18rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+      color: #ffffff;
+      font-size: 3rem;
+      font-family: font-text;
+      backface-visibility: hidden; }
+      .container__login--btn-box:visited, .container__login--btn-box:link {
+        display: inline-block;
+        padding: 3px;
+        transition: all 0.2s; }
+      .container__login--btn-box:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px); }
+      .container__login--btn-box:active {
+        box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
+        transform: translateY(-1px); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0; }
+
+@font-face {
+  src: url(../fonts/B_Yekan/Yekan.ttf);
+  font-family: font-main; }
+
+@font-face {
+  src: url(../fonts/Far_Nazanin/Far_Nazanin.ttf);
+  font-family: font-header; }
+
+@font-face {
+  src: url(../fonts/Far_Diplomat/Far_Diplomat.ttf);
+  font-family: font-text; }
+
+@font-face {
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf);
+  font-family: font-nastaliq; }
+
+@font-face {
+  src: url(../fonts/Suls-mir-emad/Suls.ttf);
+  font-family: font-nastaliq-2; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  direction: rtl; }
+
+/* uniti css */
+.background-color-1 {
+  background: linear-gradient(to left, #3e5151, #decba4); }
+
+.background-img-1 {
+  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 52%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/6.jpg); }
+
+.margin-right-4 {
+  margin-right: 4rem; }
+
+.margin-top-2 {
+  margin-top: 2rem; }
+
+.background-color-secandary {
+  background-color: #decba4; }
